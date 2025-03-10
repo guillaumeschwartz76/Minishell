@@ -19,7 +19,7 @@ utils/clean_utils.c utils/handle_utils.c utils/is_check.c utils/fd_utils.c utils
 OBJ = $(SRC:.c=.o)
 
 CC = cc
-CFLAGS = -g -Wall -Wextra -Werror -I/usr/include 
+CFLAGS = -g -Wall -Wextra -Werror -Wno-unused -I/usr/include 
 LDFLAGS = -lm -lz -lreadline
 
 all: $(NAME)
